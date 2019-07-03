@@ -9,6 +9,7 @@
        console.log("Making the request..");
        var xhr = new XMLHttpRequest();
        xhr.open('GET', 'https://safari-api-test.development:5050/test');
+       xhr.setRequestHeader('If-Unmodified-Since', (new Date()).toUTCString());
        xhr.send();
        console.log("done!");
      };
