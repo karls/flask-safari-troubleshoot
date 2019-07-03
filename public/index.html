@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='utf8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+    <title>Double request (response?) test</title>
+    <script type="text/javascript">
+     window.makeRequest = function() {
+       console.log("Making the request..");
+       var xhr = new XMLHttpRequest();
+       xhr.open('GET', 'https://safari-api-test.development:5050/test');
+       xhr.send();
+       console.log("done!");
+     };
+    </script>
+    <script src='main.js'></script>
+  </head>
+
+  <body onload="window.makeRequest();">
+  </body>
+</html>
