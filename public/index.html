@@ -11,6 +11,9 @@
        xhr.open('GET', 'https://safari-api-test.development:5050/test');
        // Uncomment to stop double requests
        // xhr.setRequestHeader('If-Unmodified-Since', (new Date()).toUTCString());
+
+       // Uncomment to trigger OPTIONS but not prevent double requests
+       // xhr.setRequestHeader('X-Prevent-Double-Request', true);
        xhr.send();
        console.log("done!");
      };
