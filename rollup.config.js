@@ -18,20 +18,20 @@ export default {
       historyApiFallback: true,
       host: 'safari-frontend-test.development',
       port: 5051,
-      https: {
-        key: fs.readFileSync('./key.pem'),
-        cert: fs.readFileSync('./cert.pem')
-      }
+      /* https: {
+       *   key: fs.readFileSync('./key.pem'),
+       *   cert: fs.readFileSync('./cert.pem')
+       * } */
     }),
 
     // Watch the `public` directory and refresh the
     // browser on changes when not in production
     !production && livereload({
       watch: 'public',
-      https: {
-        key: fs.readFileSync('./key.pem'),
-        cert: fs.readFileSync('./cert.pem')
-      }
+      /* https: {
+       *   key: fs.readFileSync('./key.pem'),
+       *   cert: fs.readFileSync('./cert.pem')
+       * } */
     }),
   ],
   watch: {

@@ -6,7 +6,7 @@ from flask_cors import CORS
 def create_app():
     app = Flask(__name__)
     app.config['SERVER_NAME'] = 'safari-api-test.development:5050'
-    app.config['PREFERRED_URL_SCHEME'] = 'https'
+    # app.config['PREFERRED_URL_SCHEME'] = 'https'
 
     CORS(app)
 

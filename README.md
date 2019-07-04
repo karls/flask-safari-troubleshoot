@@ -1,5 +1,7 @@
 # Strange Flask + Safari double request (response?) issue
 
+[Screen recording of the behaviour](https://d.pr/v/1h7iRZ)
+
 1. Clone this repo
 2. `cd` into it
 3. Add the two lines from hosts.example to your `/etc/hosts` file
@@ -14,4 +16,5 @@
 
 What is happening..?
 
-[Screen recording of the behaviour](https://d.pr/v/1h7iRZ)
+Note: I've included a self-signed certificate in the repo, but this
+behaviour also happens when using plain HTTP.
